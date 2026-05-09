@@ -11,7 +11,9 @@ from telegram.ext import (
 import threading
 import time
 
-TOKEN = "yourtoken"
+import os
+
+TOKEN = os.getenv("BOT_TOKEN")
 
 DATABASE_FILE = "schedule_db.json"
 
